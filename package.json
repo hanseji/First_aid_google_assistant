@@ -2,9 +2,9 @@
   "name": "webhook-echo-sample",
   "version": "1.0.0",
   "description": "Webhook echo sample",
-  "main": "node Index.js",
+  "main": "node index.js",
   "scripts": {
-    "start": "node Index.js"
+    "start": "node index.js"
   },
   "author": "Sunil Syal",
   "dependencies": {
