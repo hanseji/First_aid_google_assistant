@@ -60,6 +60,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   agent.handleRequest(intentMap);
 });
 
-restService.listen(process.env.PORT || 8080, function() {
-  console.log("Server up and listening");
+app.listen(process.env.PORT || 8080, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
