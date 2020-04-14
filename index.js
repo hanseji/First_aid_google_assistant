@@ -59,3 +59,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
 });
+
+restService.listen(process.env.PORT || 8000, function() {
+  console.log("Server up and listening");
+});
